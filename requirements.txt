@@ -1,0 +1,6 @@
+autopep8==1.7.0
+Pillow==9.2.0
+pycodestyle==2.9.1
+reportlab==3.6.11
+toml==0.10.2
+xmltodict==0.13.0
