@@ -10,4 +10,4 @@ db = utilities.open_db(db_location)
 decks = utilities.open_decks(deck_location)
 decks = utilities.parse_decks(decks, db)
 
-utilities.create_deck(decks, pdf_file_name)
+utilities.create_pdf(decks, pdf_file_name)
