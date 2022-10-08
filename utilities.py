@@ -39,6 +39,7 @@ def parse_decks(decks, db):
     return (lrig_deck_cards, main_deck_cards)
 
 def write_deck_on_canvas(deck, canvas):
+    """given deck data write the images and text onto a pdf"""
     document_width, document_height = letter
     for card in deck:
         try:
@@ -65,7 +66,8 @@ def write_deck_on_canvas(deck, canvas):
         canvas.drawText(text_object)
         canvas.showPage()
 
-def create_deck(decks, pdf_file_name):
+def create_pdf(decks, pdf_file_name):
+    """create and write both decks onto a pdf"""
     canvas = Canvas(pdf_file_name, pagesize=letter)
 
     write_deck_on_canvas(decks[0], canvas)
